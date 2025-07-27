@@ -1,0 +1,465 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:rgb(227, 201, 154);
+}
+
+header {
+  padding: 1.2rem 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgb(15, 9, 9);
+  height: 90px;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo img {
+  height: 60px;
+  width: 150px;
+  width: auto;
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+  
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: orangered;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 140, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-left: 60px;
+  padding-right: 70px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-text {
+  max-width: 700px;
+}
+
+.name-1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
+}
+
+.description {
+  font-size: 18px;
+  color: orangered;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.contact-btn {
+  background-color: black;
+  color: orangered;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(90deg, #17c1b8, #1da1f2);
+}
+
+.profile-pic img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+  transform: translate(0, -10px) scale(1.1);
+}
+
+.about-container p {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  font-size: xx-large;
+  font-weight: bolder;
+
+}
+
+.head span {
+  border-bottom: 4px solid orangered;
+  border-radius: 0 0 3px 3px;
+  padding-bottom: 5px;
+}
+
+.about-description {
+  width: 1000px;
+  margin: 70px auto 0 auto;
+  padding: 30px;
+  text-align: justify;
+}
+
+.education-container .headeducation {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.headeducation span {
+  border-bottom: 4px solid orangered;
+  border-radius: 0 0 3px 3px;
+  padding-bottom: 5px;
+}
+
+.ssc,
+.diploma {
+  display: inline-block;
+  border: 2px solid black;
+  box-shadow: 0 0 20px grey;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(250, 215, 185);
+
+}
+
+.ssc {
+  margin-left: 130px;
+  width: 272px;
+}
+
+.diploma {
+  margin-left: 400px;
+}
+
+.ssc img {
+  height: 100px;
+  width: 100px;
+}
+
+.diploma img {
+  height: 100px;
+  width: 100px;
+}
+
+.diploma:hover {
+  transform: translateY(-5px);
+  border-color: #ff4500;
+  box-shadow: 0 0 20px orangered;
+}
+
+.ssc:hover {
+  transform: translateY(-5px);
+  border-color: #ff4500;
+  box-shadow: 0 0 20px orangered;
+}
+
+.skill-container p {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-container span {
+  border-bottom: 4px solid orangered;
+  border-radius: 0 0 3px 3px;
+  padding-bottom: 5px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.lang div {
+  display: inline-block;
+  justify-content: center;
+  border: solid black 2px;
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px grey;
+}
+
+.lang {
+  width: 950px;
+  position: relative;
+  left: 175px;
+}
+
+.lang img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lang div:hover {
+  transform: translateY(-5px);
+  border-color: #ff4500;
+  box-shadow: 0 0 20px orangered;
+}
+
+.project-container p {
+  display: flex;
+  justify-content: center;
+}
+
+.project-container span {
+  border-bottom: 4px solid orangered;
+  border-radius: 0 0 3px 3px;
+  padding-bottom: 5px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.grocery {
+  width: 600px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px auto;
+}
+
+.grocery:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 24px orangered;
+  border-color: orangered;
+}
+
+.grocery h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: orangered;
+  text-align: center;
+}
+
+.grocery iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ccc;
+}
+
+.grocery ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #333;
+  font-size: 15px;
+}
+
+.grocery ul span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.hospital {
+  width: 600px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px auto;
+}
+
+.hospital:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 24px orangered;
+  border-color: orangered;
+}
+
+.hospital h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: orangered;
+  text-align: center;
+}
+
+.hospital iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ccc;
+}
+
+.hospital ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #333;
+  font-size: 15px;
+}
+
+.hospital ul span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.conatact-container p {
+  display: flex;
+  justify-content: center;
+}
+
+.conatact-container span {
+  border-bottom: 4px solid orangered;
+  border-radius: 0 0 3px 3px;
+  padding-bottom: 5px;
+  /* font-size: xx-large; */
+  font-weight: bolder;
+}
+
+.headcontact span {
+  font-size: xx-large;
+}
+
+.contact {
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 150px;
+}
+
+.contact:hover {
+  border: orangered solid 2px;
+  box-shadow: 0 0 5px orangered;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 10px;
+
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.contact-item i {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.contact-item span {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+}
+
+.contact-item:hover span {
+  border-color: currentColor;
+  color: orangered;
+}
+
+a {
+  border: solid black 2px;
+  padding: 10px;
+  width: 100px;
+  height: 86px;
+  border-radius: 5px;
+}
+
+a:hover {
+  border: solid orangered 2px;
+  box-shadow: 0 0 12px orangered;
+}
+
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+footer:hover{
+box-shadow: 0 0 12px orangered;
+color: orangered;
+}
